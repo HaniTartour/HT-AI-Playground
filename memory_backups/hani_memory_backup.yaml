@@ -1,0 +1,116 @@
+user_profile:
+  name: Hani M. Tartour
+  role: Structural BIM Engineer
+  expertise:
+    - Revit
+    - Dynamo
+    - Python
+    - Revit API
+  branding:
+    - HT
+    - NodeForge
+  style:
+    - forward-thinking
+    - honest
+    - conversational
+    - clever humor
+    - prefers modular reusable scripts
+
+learning_tracks:
+  - name: Revit API + Dynamo
+    status: completed
+    notes:
+      - FilteredElementCollector scripting with flexible category handling
+      - BuiltInCategory integration
+      - Error handling and custom dropdowns in Dynamo
+
+tools:
+  - name: LevelSelectorTool
+    platform: Dynamo
+    components:
+      - level_selector_main.py
+      - level_selector_ui.py
+      - /resources/: [HT-logo.png, level.ico]
+    features:
+      - modular UI layout
+      - checkbox lists
+      - dynamic search and resizing
+      - branded HT/BIMBuddy
+      - level filtering (Level and Reference Level)
+
+  - name: Filter by Level
+    platform: pyRevit
+    type: PushButton Tool
+    features:
+      - filters selected Revit elements by Level/Reference Level
+      - branded UI with checkbox list and search
+      - handles edge cases (beams, non-standard level references)
+
+  - name: Rename Views+
+    platform: pyRevit
+    type: PushButton Tool
+    features:
+      - DataGridView preview with duplicate detection
+      - Sorting and renaming preview
+      - Highlighting and filtering by discipline/view type
+      - Planned: batch rename, template naming system
+
+  - name: Pick on Object
+    platform: pyRevit
+    type: PushButton Tool
+    features:
+      - Element picker
+      - Displays ID, Name, Category, Level
+      - Custom branded Windows Form
+
+  - name: CloneBuddy (Extension Manager)
+    platform: pyRevit
+    type: Custom Tool Suite
+    components:
+      - CloneBuddyCore.py
+      - RefreshExtensions.pushbutton
+      - CheckExtensions.pushbutton
+    features:
+      - GitHub repository cloning
+      - Folder validation and fixing
+      - Auto-generation of extension.json
+      - Branded UI
+      - Auto-register extensions and reload into pyRevit
+
+  - name: Auto-Generate Layout Tool
+    platform: pyRevit
+    type: PushButton Tool
+    features:
+      - Scans `.panel/` and `.pushbutton/` folders
+      - Generates `extension.json`
+      - Includes styled confirmation UI
+      - Future: layout editor (drag and drop)
+
+branding_system:
+  file: ht_ui_branding.py
+  purpose: reusable branding helper for Windows Forms
+  applied_to:
+    - AboutForm
+    - LayoutUpdatedForm
+    - all future tools
+
+github_portfolio:
+  status: in_progress
+  goals:
+    - showcase HT projects with screenshots
+    - list of Revit/Dynamo/pyRevit tools
+    - YouTube + Udemy preview thumbnails
+    - downloadable resume and certificate gallery
+    - live GitHub Pages site with dark/light theme
+
+roadmap:
+  - Build "Filter by Category" under Filter pulldown
+  - Add CloneBuddy GUI mode
+  - Automate diagnostics and fixing for extensions
+  - Save tool config/state to JSON or INI
+  - Publish GitHub Portfolio landing page
+
+archived_jobs:
+  - BIM Instructor (June 2025, Cairo)
+  - Revit Assessment scheduling
+  - Company comparison: Engisoft vs Atrium
