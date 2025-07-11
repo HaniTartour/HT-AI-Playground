@@ -1,22 +1,38 @@
+"name": "HT-AI-Playground",
 {
-  "name": "HT AI Playground",
-  "description": "AI assistant workspace for my Revit API, pyRevit, Dynamo scripts and prompt engineering.",
+  "description": "A playground for experimenting with AI, prompt engineering, and BIM automation.",
   "source_paths": [
-    "./",
-    "../HT-Toolbox"
+    "prompts/",
+    "memory_backups/",
+    "design_logs/",
+    "roadmap/"
   ],
-  "examples": [
+  "example_prompts": [
+    "Generate a Dynamo script to automate sheet creation in Revit.",
+    "Write a pyRevit script that renames views based on a naming convention.",
+    "Create a prompt template for portfolio building.",
+    "Suggest a Python UI for a Revit add-in.",
+    "Draft a GitHub branding strategy for HT tools."
+  ],
+  "supported_tools": [
+    "Revit API",
+    "Dynamo",
+    "pyRevit",
+    "Python UI",
+    "GitHub"
+  ],
+  "features": [
+    "Prompt library for BIM automation",
+    "Memory backup and export",
+    "Roadmap and design logs",
+    "Portfolio and branding support"
+  ],
+  "contributors": [
     {
-      "name": "List pyRevit pushbuttons",
-      "prompt": "List all pushbuttons in my pyRevit extension with their panel names and descriptions."
-    },
-    {
-      "name": "Check extension.json layout",
-      "prompt": "Check if extension.json has valid panel paths and tools."
-    },
-    {
-      "name": "Summarize the RenameViews script",
-      "prompt": "Explain what RenameViews.py does and suggest improvements for naming logic."
+      "name": "Hani Tartour",
+      "role": "Owner"
     }
-  ]
+  ],
+  "version": "1.0",
+  "last_updated": "2025-07-12"
 }
