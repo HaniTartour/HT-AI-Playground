@@ -69,3 +69,11 @@ Here is the code:<....>
 
 ##### 🧩 Tags :
 
+## Task:
+Explain how to place a viewport on a sheet using the Revit API.
+
+## Prompt:
+How do I place a ViewSection on a specific sheet at a specific point using the Revit API?
+
+## Tags:
+RevitAPI, Sheets, Viewports, Python

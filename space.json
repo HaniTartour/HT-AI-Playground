@@ -1,0 +1,22 @@
+{
+  "name": "HT AI Playground",
+  "description": "AI assistant workspace for my Revit API, pyRevit, Dynamo scripts and prompt engineering.",
+  "source_paths": [
+    "./",
+    "../HT-Toolbox"
+  ],
+  "examples": [
+    {
+      "name": "List pyRevit pushbuttons",
+      "prompt": "List all pushbuttons in my pyRevit extension with their panel names and descriptions."
+    },
+    {
+      "name": "Check extension.json layout",
+      "prompt": "Check if extension.json has valid panel paths and tools."
+    },
+    {
+      "name": "Summarize the RenameViews script",
+      "prompt": "Explain what RenameViews.py does and suggest improvements for naming logic."
+    }
+  ]
+}
